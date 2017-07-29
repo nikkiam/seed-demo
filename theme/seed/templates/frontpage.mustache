@@ -57,13 +57,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<style type="text/css">
-.bgimg {
-    background-image: url('theme/seed/image.png');
-    background-repeat: no-repeat;
-}
-</style>
-
 <body {{{ bodyattributes }}}>
 
 <div id="page-wrapper">
@@ -74,6 +67,12 @@
     <div id="page" class="container-fluid">
         {{{ output.full_header }}}
         <div id="page-content" class="row">
+	<style type="text/css">
+            .bgimg {
+            background-image: url('theme/seed/image.png');
+            background-repeat: no-repeat;
+            }
+        </style>
             <div id="region-main-box" class="col-xs-12">
 		{{#hasregionmainsettingsmenu}}
                 <div id="region-main-settings-menu" class="hidden-print {{#hasblocks}}has-blocks{{/hasblocks}}">
