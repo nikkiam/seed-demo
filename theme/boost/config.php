@@ -68,7 +68,7 @@ $THEME->layouts = [
         'file' => 'columns2.php',
         'regions' => array('side-pre'),
         'defaultregion' => 'side-pre',
-        'options' => array('nonavbar' => true),
+        'options' => array('nonavbar' => false),
     ),
     // Server administration scripts.
     'admin' => array(
