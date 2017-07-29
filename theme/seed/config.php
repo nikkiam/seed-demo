@@ -26,6 +26,17 @@ $THEME->editor_sheets = [];
 // order of importance (later themes overriding earlier ones). Things we will inherit from the parent theme include                 
 // styles and mustache templates and some (not all) settings.                                                                       
 $THEME->parents = ['boost'];                                                                                                        
+
+// Here we define our custom templates
+$THEME->layouts = [
+    // The site home page.
+    'frontpage' => array(
+        'file' => 'frontpage.php',
+        'regions' => array('side-pre'),
+        'defaultregion' => 'side-pre',
+        'options' => array('nonavbar' => true),
+    )
+];
  
 // A dock is a way to take blocks out of the page and put them in a persistent floating area on the side of the page. Boost         
 // does not support a dock so we won't either - but look at bootstrapbase for an example of a theme with a dock.                    
