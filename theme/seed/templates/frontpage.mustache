@@ -74,6 +74,22 @@
 	    height: 100%; 
 	    width: 100%;
             }
+	    
+	    .link-btn {
+	    color: white;
+	    background: #7fcad0;
+	    padding: 10px 20px;
+	    display: block;
+	    margin: 10px 0;
+	    text-align: center;
+	    text-transform: uppercase;
+	    letter-spacing: 1px;
+	    font-size: 13px;
+	    }
+ 
+	    .link-btn:hover {
+    	    background: #6ab8be;
+	    }
         </style>
             <div id="region-main-box" class="col-xs-12">
 		{{#hasregionmainsettingsmenu}}
@@ -82,8 +98,8 @@
                 </div>
                 {{/hasregionmainsettingsmenu}}
                 <section id="region-main" {{#hasblocks}}class="has-blocks"{{/hasblocks}}>
-                    <div class="card card-block">
-		        <div class="bgimg">Success!<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></div>
+                    <div class="card card-block bgimg">
+		        <div><a href="/login/signup.php" class="link-btn">Register with SEED!</a><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></div>
                         {{#hasregionmainsettingsmenu}}
                         <div class="region_main_settings_menu_proxy"></div>
                         {{/hasregionmainsettingsmenu}}
