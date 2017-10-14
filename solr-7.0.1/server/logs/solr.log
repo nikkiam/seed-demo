@@ -1,0 +1,38 @@
+2017-10-14 17:56:49.016 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.14.v20161028
+2017-10-14 17:56:50.581 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.0.1
+2017-10-14 17:56:50.587 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2017-10-14 17:56:50.587 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /var/www/html/platform/moodle/solr-7.0.1, Default config dir: /var/www/html/platform/moodle/solr-7.0.1/server/solr/configsets/_default/conf
+2017-10-14 17:56:50.650 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2017-10-14T17:56:50.594Z
+2017-10-14 17:56:50.651 INFO  (main) [   ] o.a.s.s.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
+2017-10-14 17:56:50.692 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /var/www/html/platform/moodle/solr-7.0.1/server/solr
+2017-10-14 17:56:50.706 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /var/www/html/platform/moodle/solr-7.0.1/server/solr/solr.xml
+2017-10-14 17:56:52.518 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 0 core definitions underneath /var/www/html/platform/moodle/solr-7.0.1/server/solr
+2017-10-14 17:56:52.615 INFO  (main) [   ] o.e.j.s.Server Started @5055ms
+2017-10-14 17:56:56.542 INFO  (qtp1205044462-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=147
+2017-10-14 17:56:56.742 INFO  (qtp1205044462-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=53
+2017-10-14 17:56:56.774 INFO  (qtp1205044462-16) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2017-10-14 17:56:56.779 INFO  (qtp1205044462-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=moodle&action=STATUS&wt=json} status=0 QTime=7
+2017-10-14 17:56:56.879 INFO  (qtp1205044462-17) [   ] o.a.s.h.a.CoreAdminOperation core create command name=moodle&action=CREATE&instanceDir=moodle&wt=json
+2017-10-14 17:56:57.165 INFO  (qtp1205044462-17) [   x:moodle] o.a.s.c.SolrResourceLoader [moodle] Added 51 libs to classloader, from paths: [/var/www/html/platform/moodle/solr-7.0.1/contrib/clustering/lib, /var/www/html/platform/moodle/solr-7.0.1/contrib/extraction/lib, /var/www/html/platform/moodle/solr-7.0.1/contrib/langid/lib, /var/www/html/platform/moodle/solr-7.0.1/contrib/velocity/lib, /var/www/html/platform/moodle/solr-7.0.1/dist]
+2017-10-14 17:56:57.759 INFO  (qtp1205044462-17) [   x:moodle] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.0.1
+2017-10-14 17:56:58.550 INFO  (qtp1205044462-17) [   x:moodle] o.a.s.s.IndexSchema [moodle] Schema name=default-config
+2017-10-14 17:56:59.881 INFO  (qtp1205044462-17) [   x:moodle] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2017-10-14 17:56:59.985 INFO  (qtp1205044462-17) [   x:moodle] o.a.s.c.CoreContainer Creating SolrCore 'moodle' using configuration from instancedir /var/www/html/platform/moodle/solr-7.0.1/server/solr/moodle, trusted=true
+2017-10-14 17:57:00.034 INFO  (qtp1205044462-17) [   x:moodle] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2017-10-14 17:57:00.053 INFO  (qtp1205044462-17) [   x:moodle] o.a.s.c.SolrCore [[moodle] ] Opening new SolrCore at [/var/www/html/platform/moodle/solr-7.0.1/server/solr/moodle], dataDir=[/var/www/html/platform/moodle/solr-7.0.1/server/solr/moodle/data/]
+2017-10-14 17:57:00.311 INFO  (qtp1205044462-17) [   x:moodle] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2017-10-14 17:57:01.404 INFO  (qtp1205044462-17) [   x:moodle] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2017-10-14 17:57:01.406 INFO  (qtp1205044462-17) [   x:moodle] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2017-10-14 17:57:01.443 INFO  (qtp1205044462-17) [   x:moodle] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2017-10-14 17:57:01.445 INFO  (qtp1205044462-17) [   x:moodle] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2017-10-14 17:57:01.535 INFO  (qtp1205044462-17) [   x:moodle] o.a.s.s.SolrIndexSearcher Opening [Searcher@72d9b749[moodle] main]
+2017-10-14 17:57:01.587 INFO  (qtp1205044462-17) [   x:moodle] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /var/www/html/platform/moodle/solr-7.0.1/server/solr/moodle/conf
+2017-10-14 17:57:01.661 INFO  (qtp1205044462-17) [   x:moodle] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2017-10-14 17:57:01.690 INFO  (qtp1205044462-17) [   x:moodle] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2017-10-14 17:57:01.752 INFO  (qtp1205044462-17) [   x:moodle] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2017-10-14 17:57:01.935 INFO  (searcherExecutor-7-thread-1-processing-x:moodle) [   x:moodle] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@72d9b749[moodle] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2017-10-14 17:57:01.936 INFO  (searcherExecutor-7-thread-1-processing-x:moodle) [   x:moodle] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-10-14 17:57:01.936 INFO  (searcherExecutor-7-thread-1-processing-x:moodle) [   x:moodle] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2017-10-14 17:57:01.952 INFO  (searcherExecutor-7-thread-1-processing-x:moodle) [   x:moodle] o.a.s.c.SolrCore [moodle] Registered new searcher Searcher@72d9b749[moodle] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2017-10-14 17:57:01.970 INFO  (qtp1205044462-17) [   x:moodle] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1581256615626014720
+2017-10-14 17:57:01.998 INFO  (qtp1205044462-17) [   x:moodle] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={name=moodle&action=CREATE&instanceDir=moodle&wt=json} status=0 QTime=5120
